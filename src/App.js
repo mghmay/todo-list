@@ -8,7 +8,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const todoNameRef = useRef();
 
-  //note that the below methods to store and retrieve data are not working and I don't know why!
+
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)); // the json object needs to be parsed before it can be used.
     if (storedTodos.length > 0) {
